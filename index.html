@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script src="js/scripts.js"></script>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Wesley van Schaijk</title>
+    </head>
+
+    <body>
+        <section id="Home"> <header class="flexable text-center text"></header> </section>
+
+        <section id="Navigation"  class="sticky-top">
+            <div class="container p-3">
+                <ul class="nav nav-fill">
+                    <li class="nav-item"><a href="index.html#About">About</a></li>
+                    <li class="nav-item"><a href="index.html#Projects">Projects</a></li>
+                    <li class="nav-item"><a href="index.html#Links">Links</a></li>
+                </ul>
+            </div> <!-- container -->
+        </section>
+
+        <section id="About" class="p-4 text-justify">
+            <div class="container">
+                <h1 class="p-5 text-center">ABOUT</h1>
+                <p class="text-justify">
+                    <b>
+                        An individual with a passion for software. Not afraid to take on a challenge that raises far beyond the comfort zone. Gained experience in costumer communications during my job as an assistant store manager.
+                        Driven by a desire to be the best I can be unlocks a wide range of different possibilities to excel in daily activities and tasks. Assisting others in these daily activities and tasks is a big part of my daily live.
+                        Assisting others helped me to develop certain skills as a teacher and as a mentor which, combined with a good ear for listening to others, positive commentary and negative commentary, makes me the person I am.
+                    </b>
+                </p>
+            </div>
+        </section>
+
+        <section id="Projects" class="p-4 text-justify">
+            <div class="container">
+                <h1 class="p-5 text-center">PROJECTS</h1>
+
+                <div class="row">
+                    <div class="col-xl-4 col-md-6 col-sm-12">
+                        <div class="card p-2 mb-2" id="P1">
+                            <img class="img-fluid mb-2" src="pictures/wschaijk.jpg" title="wschaijk.nl" alt="My Personal Website"/>
+                            <div class="card-block">
+                                <h2 class="card-title">Portfolio</h2>
+                                <h5 class="card-subtitle">Webdevelopment</h5>
+                                <p class="mt-2 mb-0">
+                                    My personal portfolio is the very first official project I commited myself to. This beautifull website is the result of this project.
+                                </p>
+                            </div> <!-- CardBlock -->
+                            <footer class="card-footer">
+                                Links: <a class="card-link" href="https://github.com/WSchaijk/Portfolio" target="_blank">GitHub</a>
+                            </footer>
+                        </div> <!-- Card -->
+                    </div> <!-- Column -->
+                </div> <!-- Row -->
+            </div> <!-- Container -->
+        </section>
+
+        <section id="Links" class="p-4 text-left">
+            <div class="container">
+                <h1 class="p-5 text-center">LINKS</h1>
+
+                <div class="row">
+                    <div class="col-xl-4 col-md-6 col-sm-12">
+                        <div class="card p-2 mb-2" id="L1">
+                            <a href="http://www.youtube.com/c/WesleyvanSchaijk" target="_blank"><img class="img-fluid mb-2 cardimage" src="pictures/youtube.jpg" title="Wesley van Schaijk YouTube Channel" alt="Picture of my YouTube channel"/></a>
+                            <div class="card-block">
+                                <h2 class="card-title">YouTube</h2>
+                                <h5 class="card-subtitle">Personal Channel</h5>
+                            </div> <!-- CardBlock -->
+                            <footer class="card-footer">
+                                Links: <a class="card-link" href="http://www.youtube.com/c/WesleyvanSchaijk" target="_blank">YouTube</a>
+                            </footer>
+                        </div> <!-- Card -->
+                    </div> <!-- Column -->
+
+                    <div class="col-xl-4 col-md-6 col-sm-12">
+                        <div class="card p-2 mb-2" id="L2">
+                            <a href="https://blogleyvanschaijk.wordpress.com" target="_blank"><img class="img-fluid mb-2" src="pictures/blogley.jpg" title="Blogley" alt="Picture of my blog"/></a>
+                            <div class="card-block">
+                                <h2 class="card-title">Blogley</h2>
+                                <h5 class="card-subtitle">Informational Blog</h5>
+                            </div> <!-- CardBlock -->
+                            <footer class="card-footer">
+                                Links: <a class="card-link" href="https://blogleyvanschaijk.wordpress.com" target="_blank">Blog</a>
+                            </footer>
+                        </div> <!-- Card -->
+                    </div> <!-- Column -->
+                </div> <!-- Row -->
+            </div> <!-- Container -->
+        </section>
+
+        <script src="js/jquery.slim.min.js"></script>
+        <script src="js/tether.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+        <script>
+            // Create variables for sections
+            var headerImage = document.getElementById("Home");
+            var navigationBar = document.getElementById("Navigation");
+            var aboutSection = document.getElementById("About");
+            var projectSection = document.getElementById("Projects");
+            var linkSection = document.getElementById("Links");
+
+            // Style sections
+            headerImage.style.backgroundColor = firstColor;
+            navigationBar.style.backgroundColor = firstColor;
+            aboutSection.style.backgroundColor = secondColor;
+            projectSection.style.backgroundColor = secondColor;
+            linkSection.style.backgroundColor = secondColor;
+
+            for(i = 1; i <= 1; i++) {
+                var projectHolder = document.getElementById("P" + i);
+                projectHolder.style.backgroundColor = thirdColor;
+            }
+
+            for(i = 1; i <= 2; i++) {
+                var linkHolder = document.getElementById("L" + i);
+                linkHolder.style.backgroundColor = thirdColor;
+            }
+        </script>
+    </body>
+</html>

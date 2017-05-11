@@ -1,0 +1,63 @@
+a {
+    color: black;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+section {
+    padding: 0;
+}
+
+header {
+    background: url("../images/background.jpg") no-repeat;
+    background-size: cover;
+}
+
+.flexable {
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 50vw;
+}
+
+.flexable-center {
+    left: 0;
+    top: 0;
+    width: 30vw;
+    height: 30vw;
+}
+
+.cardimage {
+    width: 1920px;
+}
+
+.card-footer {
+    background-color: #e6ffe6;
+}
+
+.card-link {
+    font-size: 1rem;
+    color: darkgreen;
+}
+
+.card-link:hover {
+    color: black;
+}
+
+.me {
+    width: 25%;
+}
